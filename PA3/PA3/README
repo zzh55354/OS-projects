@@ -1,0 +1,28 @@
+University of Colorado Boulder
+CSCI 3753 (Operating Systems) Spring 2019
+Programming Assignment 3
+
+  By: Ziheng Zhu
+
+Adopted from previous code by: 
+  Joel Marquez(2016) 
+
+To Run the program:
+
+	Build:
+	  make
+
+	SYNOPSIS:
+	 multi-lookup <# requester> <# resolver> <requester log> <resolver log> [ <data file> ...]
+
+
+	Examples of lookup DNS info for all names files in input folder:
+	 ./multi-lookup 5 10 requester_log.txt results.txt input/names*.txt 
+
+
+	Check queue for memory leaks:
+	  sudo apt-get install valgrind
+	  valgrind ./multi-lookup 5 10 requester_log.txt results.txt input/names*.txt
+
+	Clean:
+	 make clean
